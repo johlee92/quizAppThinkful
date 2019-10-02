@@ -140,6 +140,8 @@ function handleAnswers() {
         // console.log("the correct answer is " + correctAnswer);
         if (submittedAnswer === correctAnswer) {
             handleCorrectAnswer();
+        } else if (Number(submittedAnswer) === correctAnswer) { 
+            handleCorrectAnswer();
         } else {
             handleIncorrectAnswer(correctAnswer);
         }
