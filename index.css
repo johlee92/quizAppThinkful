@@ -34,13 +34,15 @@ main {
     text-align: center;
 }
 
-.main-section, .response-action, .restart-form {
+.main-section {
     padding: 1.5em;
     width: 100%;
 }
 
-.response-action {
+.response-action, .restart-form {
     text-align: center;
+    padding: 1.5em;
+    width: 100%;
 }
 
 .readable-background {
