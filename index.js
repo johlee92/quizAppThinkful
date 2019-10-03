@@ -77,8 +77,10 @@ function questionCreator(item) {
         <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="${item.choices[3]}">${item.choices[3]}</label>
         <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="${item.choices[4]}">${item.choices[4]}</label>
     </fieldset>
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
+    <span class="buttons-horizontal">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </span>
     </form>
     `;
     return codeGen;
@@ -147,7 +149,8 @@ function handleCorrectAnswer() {
         <fieldset>
             <legend>You are correct!</legend>
         </fieldset>
-        <button type="button">Next</button>`;
+        <button type="button">Next</button>
+        </form>`;
     $('.response-action').html(correctAnswerCode);
     algebraQuizPackage1.score++;
     updateScore();
@@ -160,7 +163,8 @@ function handleIncorrectAnswer(answer) {
     <fieldset>
         <legend>That's a bummer. The correct answer is ${answer}</legend>
     </fieldset>
-    <button type="button">Next</button>`;
+    <button type="button">Next</button>
+    </form>`;
     $('.response-action').html(incorrectAnswerCode);
 }
 

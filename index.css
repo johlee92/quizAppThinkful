@@ -30,9 +30,17 @@ main {
     padding: 1em;
 }
 
+.start-quiz {
+    text-align: center;
+}
+
 .main-section, .response-action, .restart-form {
     padding: 1.5em;
     width: 100%;
+}
+
+.response-action {
+    text-align: center;
 }
 
 .readable-background {
@@ -45,6 +53,9 @@ fieldset{
 
 button {
     cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 5px 10px;
 }
 
 legend {
@@ -54,6 +65,12 @@ legend {
 
 label {
     display: block;
+}
+
+.buttons-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 footer {
