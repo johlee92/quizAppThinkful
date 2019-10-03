@@ -71,20 +71,11 @@ function questionCreator(item) {
     `<form class="quiz-form">  
     <fieldset class ="question">
         <legend>${item.question}</legend>
-        <input type="radio" name="algebra-1" id="id1" value="${item.choices[0]}">
-        <label for="algebra-1">${item.choices[0]}</label>
-        <br>
-        <input type="radio" name="algebra-1" id="id1" value="${item.choices[1]}">
-        <label for="algebra-1">${item.choices[1]}</label>
-        <br>
-        <input type="radio" name="algebra-1" id="id1" value="${item.choices[2]}">
-        <label for="algebra-1">${item.choices[2]}</label>
-        <br>
-        <input type="radio" name="algebra-1" id="id1" value="${item.choices[3]}">
-        <label for="algebra-1">${item.choices[3]}</label>
-        <br>
-        <input type="radio" name="algebra-1" id="id1" value="${item.choices[4]}">
-        <label for="algebra-1">${item.choices[4]}</label>
+        <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="${item.choices[0]}">${item.choices[0]}</label>
+        <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="${item.choices[1]}">${item.choices[1]}</label>
+        <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="${item.choices[2]}">${item.choices[2]}</label>
+        <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="${item.choices[3]}">${item.choices[3]}</label>
+        <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="${item.choices[4]}">${item.choices[4]}</label>
     </fieldset>
     <button type="submit">Submit</button>
     <button type="reset">Reset</button>

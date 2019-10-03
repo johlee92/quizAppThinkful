@@ -25,14 +25,14 @@ main {
     background-image: url("https://images.pexels.com/photos/167682/pexels-photo-167682.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 40%;
     min-width: 300px;
-    min-height: 300px;
     padding: 1em;
 }
 
 .main-section, .response-action, .restart-form {
     padding: 1.5em;
-    max-width: 750px;
+    width: 100%;
 }
 
 .readable-background {
@@ -43,9 +43,17 @@ fieldset{
     border-style: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 legend {
     font-weight: bold;
     margin-bottom: 1em;
+}
+
+label {
+    display: block;
 }
 
 footer {
