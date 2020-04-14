@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Algebra Quiz">
+        <title>Algebra Quiz</title>
+        <link rel="stylesheet" href="wireframe.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="title-header">Algebra Quiz</h1>
+        </header>
+        <main>
+            <div class="main-section readable-background" aria-live="polite">
+                <form class="quiz-form">  
+                    <fieldset class ="question">
+                        <legend>Solve the equation: 5(- 3x - 2) - (x - 3) = -4(4x + 5) + 13</legend>
+                        <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="x = undefined">x = undefined</label>
+                        <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="x = 4">x = 4</label>
+                        <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="x = 2">x = 2</label>
+                        <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="x = 0">x = 0</label>
+                        <label for="algebra-1"><input type="radio" name="algebra-1" id="id1" required value="x = -1">x = -1</label>
+                    </fieldset>
+                    <span class="buttons-horizontal">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </span>
+                </form>
+            </div>
+            <div class="response-action readable-background" aria-live="polite"></div>
+            <div class="restart-form readable-background" aria-live="polite"></div>
+            <footer class="readable-background">
+                <span class="progress-footer status">Status: 0/5</span>
+                <span class="progress-footer score">Score: 0/5</span>
+            </footer>
+        </main>
+    </body>
+</html>
